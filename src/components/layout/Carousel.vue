@@ -47,6 +47,6 @@ export default {
 
 <style scoped lang="scss">
 .device-name {
-  padding: 34px 34px 8px 34px;
+  padding: 32px 32px 8px 32px;
 }
 </style>

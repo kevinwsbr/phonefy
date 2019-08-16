@@ -5,8 +5,8 @@
       <v-carousel height="270" hide-delimiters dark>
         <v-carousel-item height="100%" v-for="id in 3" :key="id">
           <v-row height="100%" class="fill-height" align="center" justify="space-around">
-            <v-col cols="12" md="4" v-for="(phone, p_id) in phones" :key="p_id">
-              <v-sheet dark class="mx-auto" tile elevation="1" height="100%">
+            <v-col height="270" cols="12" md="4" v-for="(phone, p_id) in phones" :key="p_id">
+              <v-sheet dark class="mx-auto tile" tile elevation="2" height="100%">
                 <v-card light>
                   <v-img src="../../assets/phone.jpg" class="black--text">
                     <v-card-title
@@ -53,6 +53,10 @@ export default {
 
 <style scoped lang="scss">
 .row {
-  padding: 10px;
+  padding: 0 10px;
+}
+.tile {
+  border-bottom: rgba(255, 255, 255, 0.99) 4px solid !important;
+  margin: -5px;
 }
 </style>
