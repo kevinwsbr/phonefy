@@ -1,11 +1,11 @@
 <template>
-  <header>
-    <v-app-bar app>
+  <div>
+    <v-app-bar app floating>
       <v-toolbar-title class="headline text-uppercase">
         <span>PHONEFY</span>
       </v-toolbar-title>
     </v-app-bar>
-  </header>
+  </div>
 </template>
 
 <script>

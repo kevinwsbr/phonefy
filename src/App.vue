@@ -1,14 +1,20 @@
 <template>
   <v-app>
-    <v-header></v-header>
-    <v-carousel></v-carousel>
-    <h2 class="display-1 pa-5">Latest Devices</h2>
-    <HelloWorld />
+    <header>
+      <v-header></v-header>
+    </header>
+    <section id="carousel">
+      <v-carousel></v-carousel>
+    </section>
+    <section id="main-content">
+      <h2 class="display-1 pa-5">Latest Devices</h2>
+      <main-page />
+    </section>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import MainPage from "./components/MainPage";
 import Header from "./components/layout/Header";
 import Carousel from "./components/layout/Carousel";
 
@@ -17,10 +23,13 @@ export default {
   components: {
     "v-header": Header,
     "v-carousel": Carousel,
-    HelloWorld
-  },
-  data: () => ({
-    //
-  })
+    "main-page": MainPage
+  }
 };
 </script>
+
+<style scoped lang="scss">
+#carousel {
+  margin-top: 64px;
+}
+</style>
