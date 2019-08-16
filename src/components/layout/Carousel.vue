@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel v-if="phones" dark height="500">
+    <v-carousel cycle v-if="phones" dark height="500">
       <v-carousel-item v-for="(phone, id) in phones" :key="id">
         <v-sheet height="100%" tile>
           <v-row class="fill-height" align="center" justify="space-around">
